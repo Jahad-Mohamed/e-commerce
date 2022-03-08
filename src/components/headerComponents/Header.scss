@@ -1,0 +1,59 @@
+@use "../../partials/variables" as *;
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: $BrainFlix-DarkBlue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: aliceblue;
+  &__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0rem 1.2rem;
+    margin-top: 1rem;
+  }
+  &__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+  &__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+  }
+  &__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: $BrainFlix-Blue;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+    color: white;
+  }
+  &__lineOne {
+    font-size: 12px;
+  }
+  &__lineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  &__optionBasket {
+    display: flex;
+    align-items: center;
+  }
+  &__basketCount {
+    margin: 0px 10px 0px 10px;
+  }
+}
